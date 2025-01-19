@@ -46,34 +46,42 @@ Example:
     note new "Complete project documentation" --tags "work,   urgent  "
 
 
+
+
 - List All Notes
 ```bash
    note all
 ```
  Displays all saved notes in the CLI.
 
-Search Notes
+
+
+
+- Search Notes
 
 ```bash
 note find --id <ID> --tags "tag1, tag2" --content "search term"
 ```
-
-
-- Find notes by ID, tags, or content.
+Find notes by ID, tags, or content.
 Example:
 ```bash
     note find --tags "work" --content "project"
 ```
 
 
+
+
 - Remove Notes
 
+```bash
 note remove --id=<ID> --tags=tag1,tag2,... --content="term"
-
+```
 Deletes notes matching the provided filters.
 Example:
 
     note remove --tags "urgent"
+
+
 
 
 - Clear All Notes
@@ -82,6 +90,8 @@ Example:
 note clean
 ```
  Removes all notes from the database.
+
+
 
 
 - View Notes in Browser
@@ -96,12 +106,16 @@ Example:
 In the browser notes are displayed in a structured, styled HTML format.
 
 
+
+
 ## Global Options
 
     --tags, -t: Specify tags for filtering or adding notes.
     --id, -i: Specify the ID of the note for filtering.
     --content, -c: Specify the content for filtering.
     --help, to show information about all commands and flags
+
+
 
 
 ## Contributing
