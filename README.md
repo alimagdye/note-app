@@ -46,7 +46,7 @@ Example:
     note new "Complete project documentation" --tags "work,   urgent  "
 
 
-
+<br>
 
 - List All Notes
 ```bash
@@ -55,7 +55,7 @@ Example:
  Displays all saved notes in the CLI.
 
 
-
+<br>
 
 - Search Notes
 
@@ -69,7 +69,7 @@ Example:
 ```
 
 
-
+<br>
 
 - Remove Notes
 
@@ -82,7 +82,7 @@ Example:
     note remove --tags "urgent"
 
 
-
+<br>
 
 - Clear All Notes
 
@@ -92,7 +92,7 @@ note clean
  Removes all notes from the database.
 
 
-
+<br>
 
 - View Notes in Browser
 ```bash
@@ -106,7 +106,7 @@ Example:
 In the browser notes are displayed in a structured, styled HTML format.
 
 
-
+<br>
 
 ## Global Options
 
