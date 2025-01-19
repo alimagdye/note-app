@@ -1,13 +1,12 @@
 # note-app
-Note is a CLI App using Node.JS
-
+A feature-rich Node.js CLI and web-based application for managing notes. This app uses a JSON file (db.json) as its database and supports operations like adding, retrieving, filtering, removing, and viewing notes in a web browser.
 ## Features
 
-- Add new notes with a title and body.
-- List all saved notes.
-- Read a specific note by title.
-- Delete notes by title.
-- Configured to run globally using `npm link`.
+- Add Notes: Create new notes with content and optional tags.
+- List Notes: View all saved notes in the CLI or browser.
+- Search Notes: Find notes by ID, tags, or content.
+- Delete Notes: Remove specific notes or clear all notes.
+- View Notes in Browser: Launch a local server to view notes in an HTML format.
 
 ## Installation
 
@@ -17,75 +16,94 @@ Note is a CLI App using Node.JS
    git clone https://github.com/alimagdye/note-app.git
    cd note-app
 
-    Install dependencies:
 
-npm install
+2. Install Dependencies:
 
-Set up the CLI tool globally using npm link:
+   ```bash
+    npm install
 
-    npm link
 
-    This allows the note command to be used globally.
+3. Set Up as a Global CLI Tool:
+   ```bash
+   npm link
 
-Usage
+This will make the note command globally accessible.
+ 
 
-Once the application is set up, you can use the note command followed by specific options to manage your notes.
-Add a Note
+## Usage
 
-note add --title="Your Note Title" --body="Your Note Body"
+After installation, use the note command with the following options:
 
-Adds a new note with the specified title and body.
-List Notes
+- Add a Note
 
-note list
+```bash
+   note new "<note content>" --tags "tag1,tag2,..."
+```
 
-Lists all saved notes.
-Read a Note
+Creates a new note with content and optional tags.
+Example:
 
-note read --title="Your Note Title"
+    note new "Complete project documentation" --tags "work,   urgent  "
 
-Reads and displays the content of a note by its title.
-Delete a Note
 
-note remove --title="Your Note Title"
+- List All Notes
+```bash
+   note all
+```
+ Displays all saved notes in the CLI.
 
-Deletes the note with the specified title.
-Project Structure
+Search Notes
 
-    index.js: Main application file handling CLI commands and note operations.
-    db.json: Stores notes in JSON format for persistence.
-    package.json: Manages dependencies and defines the note command for global usage.
+```bash
+note find --id <ID> --tags "tag1, tag2" --content "search term"
+```
 
-Dependencies
 
-    yargs: For parsing command-line arguments.
-    fs: To handle file system operations.
-    open: For additional functionalities (e.g., opening files or URLs).
+- Find notes by ID, tags, or content.
+Example:
+```bash
+    note find --tags "work" --content "project"
+```
 
-Example Commands
 
-    Add a note:
+- Remove Notes
 
-note add --title="Meeting Notes" --body="Discuss project roadmap"
+note remove --id=<ID> --tags=tag1,tag2,... --content="term"
 
-List notes:
+Deletes notes matching the provided filters.
+Example:
 
-note list
+    note remove --tags "urgent"
 
-Read a note:
 
-note read --title="Meeting Notes"
+- Clear All Notes
 
-Remove a note:
+```bash
+note clean
+```
+ Removes all notes from the database.
 
-    note remove --title="Meeting Notes"
 
-Contributing
+- View Notes in Browser
+```bash
+note web [port]
+```
+Launches a local server to view notes in the browser. The default port is 5000.
+Example:
+
+    note web 3000
+
+In the browser notes are displayed in a structured, styled HTML format.
+
+
+## Global Options
+
+    --tags, -t: Specify tags for filtering or adding notes.
+    --id, -i: Specify the ID of the note for filtering.
+    --content, -c: Specify the content for filtering.
+    --help, to show information about all commands and flags
+
+
+## Contributing
 
 Contributions are welcome! If you find a bug or have a feature request, please create an issue or submit a pull request.
-License
-
-This project is licensed under the MIT License.
-
-
-Feel free to update the README further if you add more features or changes to your app!
