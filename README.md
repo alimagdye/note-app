@@ -1,2 +1,2 @@
 # note-app
-CLI Note App using Node.JS
+Note is a CLI App using Node.JS
