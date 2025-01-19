@@ -74,7 +74,7 @@ Example:
 - Remove Notes
 
 ```bash
-note remove --id=<ID> --tags=tag1,tag2,... --content="term"
+note remove --id <ID> --tags tag1,tag2,... --content "term"
 ```
 Deletes notes matching the provided filters.
 Example:
