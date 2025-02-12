@@ -20,7 +20,7 @@ A feature-rich Node.js CLI and web-based application for managing notes. This ap
 2. Install Dependencies:
 
    ```bash
-    npm install
+   npm install
 
 
 3. Set Up as a Global CLI Tool:
@@ -37,7 +37,7 @@ After installation, use the note command with the following options:
 - Add a Note
 
 ```bash
-   note new "<note content>" --tags "tag1,tag2,..."
+note new "<note content>" --tags "tag1,tag2,..."
 ```
 
 Creates a new note with content and optional tags.
