@@ -107,7 +107,7 @@ In the browser notes are displayed in a structured, styled HTML format.
 
 
 <br><br>
-
+.
 ## Global Options
 
     --tags, -t: Specify tags for filtering or adding notes.
