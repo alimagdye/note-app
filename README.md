@@ -1,5 +1,5 @@
 # note-app
-A feature-rich Node.js CLI and web-based application for managing notes. This app uses a JSON file (db.json) as its database and supports operations like adding, retrieving, filtering, removing, and viewing notes in a web browser.
+A feature-rich Node.js CLI and web-based application for managing notes. This app uses a JSON file (db.json) as its local database and supports operations like adding, retrieving, filtering, removing, and viewing notes in a web browser.
 ## Features
 
 - Add Notes: Create new notes with content and optional tags.
