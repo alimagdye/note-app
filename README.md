@@ -120,4 +120,4 @@ In the browser notes are displayed in a structured, styled HTML format.
 
 ## Contributing
 
-Contributions are welcome! If you find a bug or have a feature request, please create an issue or submit a pull request.
+Contributions are welcome! If you find a bug or have a feature request, please create an issue or submit a pull request
